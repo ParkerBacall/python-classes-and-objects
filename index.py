@@ -22,3 +22,13 @@ print(character_0.name)
 character_0.move(50, 100)
 print(character_0.x_pos)
 print(character_0.y_pos)
+
+class PlayerCharacter(GameCharacter):
+    def __init__(self, name, width, height, x_pos, y_pos):
+        super().__init__(name, width, height, x_pos, y_pos)
+player_character = PlayerCharacter('p_character', 100, 100, 100, 100)
+print(player_character.name)
+player_character.move(100, 100)
+print(player_character.x_pos)
+print(player_character.y_pos)
+
